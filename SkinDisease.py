@@ -19,7 +19,7 @@ BATCH_SIZE = 32
 #🔹 Step 3: Train / Validation Split (IMPORTANT)
 datagen = ImageDataGenerator(
     rescale=1./255,
-    validation_split=0.2,   # 80% train, 20% validation
+    validation_split=0.3,   # 70% train, 30% validation
     rotation_range=20,
     zoom_range=0.2,
     horizontal_flip=True
