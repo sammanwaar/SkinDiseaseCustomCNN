@@ -1,4 +1,5 @@
-#✅ Custom CNN Code (Exact Match for Your Dataset)
+#✅ Custom CNN Code for Skin Disease
+# Dataset https://www.kaggle.com/datasets/ismailpromus/skin-diseases-image-dataset
 #🔹 Step 1: Imports
 import os
 import numpy as np
