@@ -11,7 +11,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.optimizers import Adam
 
 #🔹 Step 2: Dataset Path
-DATASET_DIR = "/kaggle/input/skin-diseases-image-dataset/IMG_CLASSES"
+DATASET_DIR = "./IMG_CLASSES"
 
 IMG_SIZE = 224
 BATCH_SIZE = 32
@@ -110,5 +110,11 @@ plt.show()
 #🔹 Step 9: Save Model
 model.save("skin_disease_custom_cnn.h5")
 print("Model saved successfully")
+
+# Save class indices to labels.json
+import json
+with open("labels.json", "w") as f:
+    json.dump(train_data.class_indices, f)
+print("Labels saved successfully")
 
 
